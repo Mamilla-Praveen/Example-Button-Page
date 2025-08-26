@@ -25,6 +25,12 @@ class Timer extends Component {
     }));
   }
 
+  increase2() {
+    this.setState((state, props) => ({
+      time: parseInt(state.time) + 1
+    }));
+  }
+
   render() {
     return <div> {this.state.time} Detik </div>;
   }
